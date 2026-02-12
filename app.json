@@ -16,7 +16,16 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.israelitzhakov.shoppinglist",
-      "googleServicesFile": "./GoogleService-Info.plist"
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "infoPlist": {
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": [
+              "com.googleusercontent.apps.902574729038-qkl7kecv9hp6li5077rp0ii62h2ifkec"
+            ]
+          }
+        ]
+      }
     },
     "android": {
       "adaptiveIcon": {

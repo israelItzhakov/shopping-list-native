@@ -36,4 +36,4 @@ export const FIREBASE_CONFIG = {
   measurementId: 'G-NR3SWHS6W1',
 };
 
-export const GOOGLE_WEB_CLIENT_ID = '902574729038-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com';
+export const GOOGLE_WEB_CLIENT_ID = '902574729038-56cb6jlenqphtkbvpglurmuo18a7h87c.apps.googleusercontent.com';
