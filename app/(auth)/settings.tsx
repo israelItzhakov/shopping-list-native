@@ -419,7 +419,7 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     fontSize: 14,
     backgroundColor: '#fff',
-    writingDirection: 'rtl',
+    textAlign: 'right',
   },
   inputFlex: {
     flex: 1,

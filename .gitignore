@@ -43,3 +43,11 @@ GoogleService-Info.plist
 # generated native folders
 /ios
 /android
+
+# Android SDK artifacts (if leaked into project root)
+.knownPackages
+build-tools/
+licenses/
+ndk/
+platform-tools/
+platforms/

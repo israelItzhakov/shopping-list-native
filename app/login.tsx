@@ -5,7 +5,6 @@ import {
   TouchableOpacity,
   StyleSheet,
   Alert,
-  Image,
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { AuthContext } from '../hooks/AuthContext';
@@ -30,12 +29,7 @@ export default function LoginScreen() {
         <Text style={styles.subtitle}>רשימת קניות משפחתית חכמה</Text>
 
         <TouchableOpacity style={styles.signInButton} onPress={handleSignIn}>
-          <Image
-            source={{
-              uri: 'https://developers.google.com/identity/images/g-logo.png',
-            }}
-            style={styles.googleIcon}
-          />
+          <Text style={styles.googleLogo}>G</Text>
           <Text style={styles.signInText}>התחבר עם Google</Text>
         </TouchableOpacity>
       </View>
@@ -83,9 +77,10 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 4,
   },
-  googleIcon: {
-    width: 24,
-    height: 24,
+  googleLogo: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#4285F4',
     marginLeft: 12,
   },
   signInText: {

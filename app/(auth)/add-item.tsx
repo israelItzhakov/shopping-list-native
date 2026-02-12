@@ -230,7 +230,7 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     fontSize: 16,
     backgroundColor: '#fff',
-    writingDirection: 'rtl',
+    textAlign: 'right',
   },
   categoriesRow: {
     flexDirection: 'row-reverse',

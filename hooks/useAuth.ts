@@ -6,10 +6,7 @@ import {
   signInWithGoogleToken,
   signOut as firebaseSignOut,
 } from '../services/firebase';
-import {
-  GoogleSignin,
-  isSuccessResponse,
-} from '@react-native-google-signin/google-signin';
+import { GoogleSignin } from '@react-native-google-signin/google-signin';
 import { GOOGLE_WEB_CLIENT_ID } from '../utils/constants';
 
 GoogleSignin.configure({
@@ -50,12 +47,10 @@ export function useAuth() {
   const signIn = useCallback(async () => {
     try {
       await GoogleSignin.hasPlayServices();
-      const response = await GoogleSignin.signIn();
-      if (isSuccessResponse(response)) {
-        const idToken = response.data.idToken;
-        if (idToken) {
-          await signInWithGoogleToken(idToken);
-        }
+      const userInfo = await GoogleSignin.signIn();
+      const idToken = userInfo?.data?.idToken ?? (userInfo as any)?.idToken;
+      if (idToken) {
+        await signInWithGoogleToken(idToken);
       }
     } catch (error) {
       console.error('Google sign-in error:', error);

@@ -243,7 +243,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     lineHeight: 26,
     backgroundColor: '#fafafa',
-    writingDirection: 'rtl',
+    textAlign: 'right',
     minHeight: 200,
   },
   parseButton: {
